@@ -110,6 +110,16 @@ public class AddressBook {
 
 	 }
 
-
+	 public void  dupilicateContact() {
+			
+		 for(int i =0; i<people.size();i++) {
+		 AddressBook person = people.get(i);
+		 for(int j =1; j<people.size();j++) {
+			 AddressBook person2 = people.get(j);
+			 if(person.firstName.equals(person2.firstName)&&person.lastName.equals(person2.lastName)) {
+				 people.remove(person);
+			 }
+		 }
+		 
 	
 }
